@@ -1,0 +1,39 @@
+
+IllegalStateException:-->
+
+		This Exception throw by webdriver when system property
+		no setup before launching browser
+		Syntax:-->
+		
+		System.setProperty("Key","value");	
+		
+		For ChromeDriver:-->
+		System.setProperty("webdriver.chrome.driver","path//chromdriver.exe");
+		
+		For FirefoxDriver:-->
+		System.setProperty("webdriver.gecko.driver","path//geckodriver.exe");
+		
+
+SessionNotCreatedException:-->
+		This Excpetion throw by webdriver when browser version doesn't	
+		match with browser driver version..
+		
+		driver.get("http://facebook.com");
+		
+		
+InvalidArgumentException:-->
+		
+		This Exception throw by webdriver when url not defined with in
+		format
+		Note:--> Browser protocal must be  http  ot https
+		
+		driver.get("https://facebook.com");      --> Valid
+		driver.get("www.facebook.com");          --> Invalid
+		
+		
+		
+		
+		
+		
+		
+		

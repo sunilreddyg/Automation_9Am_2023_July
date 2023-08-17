@@ -6,7 +6,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class HRM_Test {
+public class HRM_Test 
+{
 
 	public static void main(String[] args) throws Exception 
 	{

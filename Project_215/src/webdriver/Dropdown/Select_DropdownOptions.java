@@ -5,7 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class Select_DropdownOptions {
+public class Select_DropdownOptions 
+{
 
 	public static void main(String[] args) 
 	{
@@ -14,20 +15,17 @@ public class Select_DropdownOptions {
 		driver.get("https://facebook.com/reg");
 		driver.manage().window().maximize();
 		
-	
-		//Selecting Dropdown optino using visible text
+		//Selecting dropdown using visible text
 		new Select(driver.findElement(By.id("day")))
-		.selectByVisibleText("22");
+		.selectByVisibleText("15");
 		
-		//Selecting dropdown option using value property
+		//Selecting dropdown using value property
 		new Select(driver.findElement(By.id("month")))
-		.selectByValue("8");
+		.selectByValue("5");
 		
-		//Selecting dropdown option using index number
+		//selecting dropdown using index number
 		new Select(driver.findElement(By.id("year")))
-		.selectByIndex(23);
-		
-		
+		.selectByIndex(25);
 		
 		
 

@@ -18,20 +18,19 @@ public class DropdownSelection_Using_ClickMethod
 		/*
 		 * => Identifying Parent Object   [Select Tag Element]
 		 * => Identifying Child Object under parent object  [Option Tag Element]
-		 * => Then we used click optiont select one of dropdown option
+		 * => Then we used click option to select one of dropdown option
 		 */
 		
-		
-		WebElement DOB_Day=driver.findElement(By.id("day"));
-		DOB_Day.findElement(By.xpath("//option[@value='26'][contains(.,'26')]")).click();
+		WebElement DayDD=driver.findElement(By.id("day"));
+		DayDD.findElement(By.xpath("//option[@value='11'][contains(.,'11')]")).click();
 		
 		
 		/*
 		 * => I Copied direct xpath of Dropdown Option [Option tag xpath]
 		 * => Then I Located element and perform click action
 		 */
-		WebElement DOB_Month=driver.findElement(By.xpath("//option[@value='10'][contains(.,'Oct')]"));
-		DOB_Month.click();
+		WebElement MonthDD=driver.findElement(By.xpath("//option[@value='11'][contains(.,'Nov')]"));
+		MonthDD.click();
 		
 	}
 }

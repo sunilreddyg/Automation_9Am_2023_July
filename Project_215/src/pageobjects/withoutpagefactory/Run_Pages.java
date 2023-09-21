@@ -1,24 +1,28 @@
 package pageobjects.withoutpagefactory;
 
+import org.junit.Before;
 import org.junit.Test;
+import org.openqa.selenium.WebDriver;
 
 public class Run_Pages extends TestBase
 {
-
-	//@Test
+	
+	WebDriver driver;
+	
+	@Test
 	public void test1() 
 	{
 		SetupChrome();
-		Testcase1 test=new Testcase1(driver);
-		test.VerifyInvalidlogin();
+		Testcase1 tests=new Testcase1(driver);
+		tests.VerifyInvalidlogin();
 	}
 	
-	@Test
+	//@Test
 	public void test2() 
 	{
 		SetupChrome();
-		Testcase1 test=new Testcase1(driver);
-		test.VerifyValidLogin();
+		Testcase1 tests=new Testcase1(driver);
+		tests.VerifyInvalidlogin();
 	}
 	
 

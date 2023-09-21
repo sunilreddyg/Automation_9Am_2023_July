@@ -20,7 +20,7 @@ public class AccountPage
 	public static By AccountImage=By.xpath("//img[@class='oxd-userdropdown-img']");
 	public static By Dashboard=By.xpath("//h6[contains(.,'Dashboard')]");
 	public static By logout=By.xpath("//a[@href='/web/index.php/auth/logout']");
-	
+	public static By SingoutMenu=By.xpath("//p[@class='oxd-userdropdown-name']");
 	
 	public boolean verifyloginSuccessful()
 	{
@@ -73,6 +73,8 @@ public class AccountPage
 		
 		return flag;
 	}
-
+	
+	
+	
 
 }

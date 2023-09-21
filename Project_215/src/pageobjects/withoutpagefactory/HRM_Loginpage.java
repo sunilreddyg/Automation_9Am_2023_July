@@ -7,21 +7,24 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import pageobjects.withoutpagefactory.keywords.PageObject_Keywords;
+
 public class HRM_Loginpage 
 {
 	WebDriver driver;
-	
+	PageObject_Keywords keywords;
 	public HRM_Loginpage(WebDriver driver) 
 	{
 		this.driver=driver;
+		keywords=new PageObject_Keywords(driver);
 	}
 	
-	public static By username=By.xpath("//input[@name='username']");
-	public static By password=By.cssSelector("input[name='password']");
-	public static By login=By.xpath("//button[@type='submit']");
-	public static By forgotpassword=By.xpath("//p[contains(.,'Forgot your password?')]");
-	public static By loc_invalidCredentials=By.xpath("//p[contains(.,'Invalid credentials')]");
-	public static By header=By.xpath("//h5[contains(.,'Login')]");
+	public  By username=By.xpath("//input[@name='username']");
+	public  By password=By.cssSelector("input[name='password']");
+	public  By login=By.xpath("//button[@type='submit']");
+	public  By forgotpassword=By.xpath("//p[contains(.,'Forgot your password?')]");
+	public  By loc_invalidCredentials=By.xpath("//p[contains(.,'Invalid credentials')]");
+	public  By header=By.xpath("//h5[contains(.,'Login')]");
 	
 	
 	
@@ -33,13 +36,21 @@ public class HRM_Loginpage
 		driver.findElement(login).click();
 	}
 	
+	public void hrmlogin(String UID,String PWD)
+	{
+		keywords.typetext(username, UID);
+		keywords.typetext(password, PWD);
+		keywords.ClickElemnet(login);
+		
+	}
+	
 	public boolean verifyLoginpageDisplayed()
 	{
 		boolean flag=false;
 	
 		try {
 			new WebDriverWait(driver, Duration.ofSeconds(30))
-			.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(username));
+			.until(ExpectedConditions.visibilityOfElementLocated(username));
 			flag=true;
 		} catch (Exception e) {
 			e.printStackTrace();

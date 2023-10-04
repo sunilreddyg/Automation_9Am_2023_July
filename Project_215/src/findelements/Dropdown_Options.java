@@ -7,7 +7,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class Dropdown_Options {
+public class Dropdown_Options 
+{
 
 	public static void main(String[] args) throws Exception 
 	{

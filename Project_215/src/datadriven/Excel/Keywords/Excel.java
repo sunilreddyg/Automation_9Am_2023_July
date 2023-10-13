@@ -62,9 +62,6 @@ public class Excel
 		sht.getRow(row).createCell(cell).setCellValue(text);
 	}
 	
-	
-	
-	
 	/* 
 	 *  Keyword:--> Crete output file and Dump all to otuput file
 	 * Description:-->

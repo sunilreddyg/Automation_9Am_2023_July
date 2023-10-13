@@ -1,0 +1,10 @@
+{
+	"name": "Sunil",
+	"subject": "selenium",
+	"components":
+	[
+		"IDE : Plugin",
+		"WD  : API",
+		"GRID: Server"
+	]
+}

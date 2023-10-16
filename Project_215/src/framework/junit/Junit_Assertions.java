@@ -1,11 +1,11 @@
 package framework.junit;
 
-import static org.junit.Assert.*;
 
 import org.junit.Assert;
 import org.junit.Test;
 
-public class Junit_Assertions {
+public class Junit_Assertions 
+{
 
 	@Test
 	public void test1() 

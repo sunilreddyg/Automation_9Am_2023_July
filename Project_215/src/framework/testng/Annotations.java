@@ -9,7 +9,7 @@ import org.testng.annotations.AfterClass;
 
 public class Annotations 
 {
-  @Test
+  @Test  //Invoke method to run without object creation..
   public void Test1() 
   {
 	  Reporter.log("Test1 Executed ",true);
@@ -28,7 +28,7 @@ public class Annotations
 	  System.out.println("Test Postcondition");
   }
 
-  @BeforeClass  //Invoke before first @Test
+  @BeforeClass  //Invoke before first @Test annotation
   public void beforeClass() 
   {
 	 System.out.println("Class PreCondition");
@@ -39,5 +39,7 @@ public class Annotations
   {
 	  System.out.println("Class PostCondition");
   }
+  
+  
 
 }

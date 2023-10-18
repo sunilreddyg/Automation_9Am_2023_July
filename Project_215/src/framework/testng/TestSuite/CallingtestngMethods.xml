@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Test For methods">
+		<test name="MethodTests">
+			<classes>
+				<class name="framework.testng.TestSuite.Class1">
+					<methods>
+						<include name="tc001"/>
+						<include name="tc003"/>
+					</methods>
+				</class>
+				
+				<class name="framework.testng.TestSuite.Class3">
+					<methods>
+						<exclude name="tc008"/>
+					</methods>
+				</class>
+			</classes>
+		</test>
+</suite>
